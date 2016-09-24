@@ -36,14 +36,14 @@
   </head>
   <body>
     <div id="tooltip"></div>
-    <script src="d3.js"></script>
-    <script src="underscore.js"></script>
-    <script src="mapper.js"></script>
+    <script src="lib/d3.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="js/mapper.js"></script>
     <script>
       //*******************************************************************
       //  CREATE MATRIX AND MAP
       //*******************************************************************
-      d3.csv('test_output3.csv', function (error, data) {
+      d3.csv('data/test_output3.csv', function (error, data) {
         var mpr = chordMpr(data);
 
         mpr
